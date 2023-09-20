@@ -2,11 +2,6 @@
 
 ## design-pattern
 
-## develop-tool
-
-- jackson
-- validate
-
 ## jdk
 
 - enums
@@ -14,3 +9,11 @@
 - DateTime
 - Optional
 - Stream
+
+## jackson
+
+## guava
+
+## develop-tool
+
+- validate
