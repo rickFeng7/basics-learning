@@ -1,4 +1,4 @@
-package com.rick.developtool.jackson.enums;
+package com.rick.jackson.enums;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;

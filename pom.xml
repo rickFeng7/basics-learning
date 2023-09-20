@@ -10,8 +10,10 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>design-pattern</module>
-        <module>develop-tool</module>
         <module>jdk</module>
+        <module>jackson</module>
+        <module>guava</module>
+        <module>develop-tool</module>
     </modules>
 
     <properties>
@@ -26,6 +28,7 @@
         <fastjson.version>2.0.11</fastjson.version>
         <commons-lang3.version>3.12.0</commons-lang3.version>
         <commons-beanutils.version>1.9.4</commons-beanutils.version>
+        <guava.version>32.1.2-jre</guava.version>
         <hibernate-validator.version>6.1.0.Final</hibernate-validator.version>
         <javax.el.version>3.0.0</javax.el.version>
     </properties>
@@ -106,6 +109,11 @@
                 <groupId>commons-beanutils</groupId>
                 <artifactId>commons-beanutils</artifactId>
                 <version>${commons-beanutils.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
             </dependency>
 
             <!-- 字段校验 -->

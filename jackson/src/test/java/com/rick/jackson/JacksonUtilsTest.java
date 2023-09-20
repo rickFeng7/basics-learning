@@ -1,9 +1,8 @@
-package com.rick.developtool.jackson;
+package com.rick.jackson;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.rick.developtool.jackson.JacksonUtils;
-import com.rick.developtool.jackson.entity.Person;
-import com.rick.developtool.jackson.enums.GenderEnum;
+import com.rick.jackson.entity.Person;
+import com.rick.jackson.enums.GenderEnum;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,14 +1,13 @@
-package com.rick.developtool.jackson.entity;
+package com.rick.jackson.entity;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.rick.developtool.jackson.enums.GenderEnum;
+import com.rick.jackson.enums.GenderEnum;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
-import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 import java.util.Date;
 
@@ -22,7 +21,6 @@ import java.util.Date;
 // @JsonIgnoreProperties({"gender"})// 序列化和反序列化忽略属性
 // @JsonPropertyOrder({"name", "gender", "genderEnum"})// 指定序列化顺序
 public class Person {
-    @NotNull// 校验
     // @JsonProperty("pName")// 设置别名
     @JsonProperty(index = 0)// 序列化顺序
     private String name;

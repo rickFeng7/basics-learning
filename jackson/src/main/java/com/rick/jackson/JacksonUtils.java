@@ -1,4 +1,4 @@
-package com.rick.developtool.jackson;
+package com.rick.jackson;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.type.TypeReference;
