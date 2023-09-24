@@ -14,6 +14,9 @@
         <module>jackson</module>
         <module>guava</module>
         <module>develop-tool</module>
+        <module>spring-mvc</module>
+        <module>spring</module>
+        <module>mybatis</module>
     </modules>
 
     <properties>
@@ -31,6 +34,11 @@
         <guava.version>32.1.2-jre</guava.version>
         <hibernate-validator.version>6.1.0.Final</hibernate-validator.version>
         <javax.el.version>3.0.0</javax.el.version>
+        <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
+        <spring-webmvc.version>5.3.29</spring-webmvc.version>
+        <spring.version>5.3.29</spring.version>
+        <mybatis.version>3.5.11</mybatis.version>
+        <mysql.version>8.0.31</mysql.version>
     </properties>
 
     <dependencies>
@@ -42,7 +50,7 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- 动态代理 -->
+            <!-- cglib -->
             <dependency>
                 <groupId>cglib</groupId>
                 <artifactId>cglib</artifactId>
@@ -126,6 +134,41 @@
                 <groupId>org.glassfish</groupId>
                 <artifactId>javax.el</artifactId>
                 <version>${javax.el.version}</version>
+            </dependency>
+
+            <!-- servlet -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>${javax.servlet-api.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- spring-webmvc -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>${spring-webmvc.version}</version>
+            </dependency>
+
+            <!-- spring -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <!-- mybatis -->
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+
+            <!-- mysql -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
